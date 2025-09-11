@@ -1,0 +1,23 @@
+body{
+    background-color: azure;
+}
+h1{
+    font-size: 80px;
+}
+strong, b {
+    font-style: italic;
+}
+h1, h2, h3, h4, h5, h6{
+    color: green;
+}
+.plorem{
+    color: white;
+    background-color:brown;
+}
+#test{
+    color:blueviolet;
+}
+.test1{
+    height: 200px;
+    background-color: cadetblue;
+}
