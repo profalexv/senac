@@ -1,0 +1,9 @@
+section{
+    text-align: center;
+}
+.div-inline{
+    display: inline-block;
+    border: 1px solid red;
+    width: 30%;
+    height: 400px;
+}

@@ -21,3 +21,8 @@ h1, h2, h3, h4, h5, h6{
     height: 200px;
     background-color: cadetblue;
 }
+#cabecalho{
+    border-color: red;
+    border: 5px;
+    padding: 120;
+}
