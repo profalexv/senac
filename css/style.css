@@ -1,95 +1,146 @@
-body{
+body {
     background-color: aliceblue;
 }
-header{
-    border:2px solid red;
+
+header {
+    border: 2px solid red;
     text-align: center;
 }
-section{
+
+section {
     display: flex;
     margin-top: 20px;
     background-color: cadetblue;
     width: 100%;
     height: 600px;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-.contidas{
+
+.contidas {
     display: inline-block;
-    width:33%;
-    height:100%;
-    overflow:auto;
+    width: 33%;
+    height: 100%;
+    overflow: auto;
 }
-.div1{
+
+.div1 {
     background-color: red;
 }
-.div2{
+
+.div2 {
     background-color: blue;
 }
-.div3{
+
+.div3 {
     background-color: yellowgreen;
 }
-article{
+
+article {
     margin-top: 50px;
     margin-left: 30px;
     margin-right: 35px;
 }
 
-article p span{
+article p span {
     display: block;
     font-size: xx-large;
     text-align: justify;
 }
-#anchor1{
-    color:gray;
+
+#anchor1 {
+    color: gray;
 }
-#anchor2{
-    color:burlywood;
+
+#anchor2 {
+    color: burlywood;
 }
-#anchor3{
-    color:blue;
+
+#anchor3 {
+    color: blue;
 }
-footer{
+
+footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
     border: 1px solid orangered;
     height: 105px;
-    position:fixed;
+    position: fixed;
     bottom: 5px;
+    z-index: 999;
 }
-.div-footer{
+
+.div-footer {
     width: 100%;
     height: 130px;
 }
-.footer{
+
+.footer {
     display: inline-block;
     width: 48%;
     height: 95px;
     background-color: aqua;
     overflow: hidden;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style-type: none;
     position: relative;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#top-menu{
-    display: flex;
-    position: sticky;
-    justify-content: right;
+
+#top-menu {
+    float:right;
 }
-#top-menu a{
-    display:inline-block;
-    color:brown;
-    border:1px dashed green;
+
+#top-menu a, .dropbtn {
+    display: inline-block;
+    color: brown;
+    border: 1px dashed green;
     padding: 10px;
 }
-#top-menu a:hover{
+
+#top-menu a:hover, .dropdown:hover .dropbtn{
     background-color: gainsboro;
 }
 
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: white;
+    opacity: 0.9;
+    
+}
+.dropdown-content a{
+    display:block;
+    width: 100px;
+    text-align: left;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.topo{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+}
+.topo a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: brown;
+    color: blanchedalmond;
+    opacity: 0.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+.topo a:hover{
+    opacity: 1;
+}
